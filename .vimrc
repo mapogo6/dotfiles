@@ -1,5 +1,6 @@
 set number
 set relativenumber
+set nowrap
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
