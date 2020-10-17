@@ -116,5 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Set EDITOR
+# Set env variables
 export EDITOR=vim
+export CXX=clang++
+export CC=clang
