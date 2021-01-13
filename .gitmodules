@@ -16,3 +16,6 @@
 [submodule ".vim/pack/plugins/start/vim-lsp-settings"]
 	path = .vim/pack/plugins/start/vim-lsp-settings
 	url = https://github.com/mattn/vim-lsp-settings.git
+[submodule ".vim/pack/plugins/start/asynccomplete.vim"]
+	path = .vim/pack/plugins/start/asynccomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
