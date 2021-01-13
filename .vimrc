@@ -14,3 +14,8 @@ let g:ctrlp_custom_ignore = {
 	\ 'dir': '\v[\/].(git|hg|svn)$',
 	\ 'file': '\v\.(exe|so|dll)$'
 	\ }
+
+let g:lsp_settings = {
+	\ 'clangd': {'cmd': ['clangd11']},
+	\ 'efm-langserver': {'disabled': v:false}
+	\ }

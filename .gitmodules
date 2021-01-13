@@ -13,3 +13,6 @@
 [submodule ".vim/pack/plugins/start/vim-lsp"]
 	path = .vim/pack/plugins/start/vim-lsp
 	url = https://prabirshreshta/vim-lsp.git
+[submodule ".vim/pack/plugins/start/vim-lsp-settings"]
+	path = .vim/pack/plugins/start/vim-lsp-settings
+	url = https://github.com/mattn/vim-lsp-settings.git
