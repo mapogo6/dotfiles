@@ -2,6 +2,7 @@ set number
 set relativenumber
 set nowrap
 syntax enable
+filetype plugin indent on
 " set background=dark
 " colorscheme solarized
 
@@ -16,7 +17,7 @@ let g:ctrlp_custom_ignore = {
 	\ }
 
 let g:lsp_settings = {
-	\ 'clangd': {'cmd': ['clangd11']},
+	\ 'clangd': {'cmd': ['clangd']},
 	\ 'efm-langserver': {'disabled': v:false}
 	\ }
 
