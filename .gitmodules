@@ -1,24 +1,6 @@
 [submodule ".tmux/tmux-colors-solarized.vim"]
 	path = .tmux/tmux-colors-solarized.vim
 	url = git@github.com:seebi/tmux-colors-solarized.git
-[submodule ".vim/pack/plugins/start/vim-surround.vim"]
-	path = .vim/pack/plugins/start/vim-surround.vim
-	url = git@github.com:tpope/vim-surround.git
-[submodule ".vim/pack/plugins/start/vim-colors-solarized.vim"]
-	path = .vim/pack/plugins/start/vim-colors-solarized.vim
-	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule ".vim/pack/plugins/start/ctrlp.vim"]
 	path = .vim/pack/plugins/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule ".vim/pack/plugins/start/vim-lsp.vim"]
-	path = .vim/pack/plugins/start/vim-lsp.vim
-	url = git@github.com:prabirshrestha/vim-lsp.git
-[submodule ".vim/pack/plugins/start/vim-lsp-settings.vim"]
-	path = .vim/pack/plugins/start/vim-lsp-settings.vim
-	url = git@github.com:mattn/vim-lsp-settings.git
-[submodule ".vim/pack/plugins/start/asyncomplete.vim"]
-	path = .vim/pack/plugins/start/asyncomplete.vim
-	url = git@github.com:prabirshrestha/asyncomplete.vim.git
-[submodule ".vim/pack/plugins/start/rust.vim"]
-	path = .vim/pack/plugins/start/rust.vim
-	url = git@github.com:rust-lang/rust.vim.git
