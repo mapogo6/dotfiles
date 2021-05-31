@@ -12,3 +12,8 @@ let g:ctrlp_custom_ignore = {
 	\ 'dir': '\v[\/].(git|hg|svn)$',
 	\ 'file': '\v\.(exe|so|dll)$'
 	\ }
+
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
