@@ -1,5 +1,5 @@
-[submodule ".tmux/tmux-colors-solarized.vim"]
-	path = .tmux/tmux-colors-solarized.vim
+[submodule ".tmux/tmux-colors-solarized"]
+	path = .tmux/tmux-colors-solarized
 	url = git@github.com:seebi/tmux-colors-solarized.git
 [submodule ".vim/pack/plugins/start/ctrlp.vim"]
 	path = .vim/pack/plugins/start/ctrlp.vim
