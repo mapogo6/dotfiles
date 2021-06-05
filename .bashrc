@@ -120,3 +120,5 @@ fi
 export EDITOR=vim
 export CXX=clang++
 export CC=clang
+
+alias open='xdg-open'
