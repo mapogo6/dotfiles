@@ -13,3 +13,9 @@
 [submodule ".vim/pack/plugins/start/vim-lsp"]
 	path = .vim/pack/plugins/start/vim-lsp
 	url = git@github.com:prabirshrestha/vim-lsp.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git
+[submodule ".tmux/plugins/tmux-prefix-highlight"]
+	path = .tmux/plugins/tmux-prefix-highlight
+	url = git@github.com:tmux-plugins/tmux-prefix-highlight.git
