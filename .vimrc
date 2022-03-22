@@ -3,6 +3,8 @@ set relativenumber
 set nowrap
 syntax enable
 
+let g:netrw_dirhistmax=0
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
