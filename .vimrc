@@ -19,3 +19,8 @@ inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
+if filereadable(expand("~/.vimrc_background"))
+	let base16colorspace=256
+	source ~/.vimrc_background
+endif
+
