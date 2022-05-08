@@ -17,11 +17,14 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+localBinDirectories=("$HOME/bin" "$HOME/.local/bin" "$HOME/.bin")
+for binaryDir in ${localBinDirectories[@]}; do
+	if [ -d "$binaryDir" ]; then
+		PATH="$binaryDir:$PATH"
+	fi
+done
+
+if [ -x "$HOME/.cargo/env" ]; then
+	. "$HOME/.cargo/env"
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
