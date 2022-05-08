@@ -37,3 +37,6 @@
 [submodule ".config/zsh/zsh-vi-mode"]
 	path = .config/zsh/plugins/zsh-vi-mode
 	url = git@github.com:jeffreytse/zsh-vi-mode
+[submodule ".config/zsh/plugins/zsh-syntax-highlighting"]
+	path = .config/zsh/plugins/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting
