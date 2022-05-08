@@ -34,3 +34,6 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = git@github.com:ohmyzsh/ohmyzsh.git
+[submodule ".config/zsh/zsh-vi-mode"]
+	path = .config/zsh/plugins/zsh-vi-mode
+	url = git@github.com:jeffreytse/zsh-vi-mode

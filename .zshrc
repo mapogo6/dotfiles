@@ -76,6 +76,7 @@ plugins=(
 	web-search
 	# custom:
 	base16-shell
+	zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
