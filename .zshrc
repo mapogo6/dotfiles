@@ -71,7 +71,10 @@ ZSH_CUSTOM=$HOME/.config/zsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+	# built-in:
 	git
+	web-search
+	# custom:
 	base16-shell
 )
 
