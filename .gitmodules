@@ -19,19 +19,19 @@
 [submodule ".tmux/plugins/tmux-prefix-highlight"]
 	path = .tmux/plugins/tmux-prefix-highlight
 	url = git@github.com:tmux-plugins/tmux-prefix-highlight.git
-[submodule ".config/base16-shell"]
+[submodule ".config/zsh/plugins/base16-shell"]
 	path = .config/zsh/plugins/base16-shell
 	url = git@github.com:chriskempson/base16-shell.git
 [submodule ".vim/pack/plugins/start/base16-vim"]
 	path = .vim/pack/plugins/start/base16-vim
 	url = git@github.com:chriskempson/base16-vim.git
-[submodule ".config/themes/dracula.zsh-theme"]
+[submodule ".config/zsh/themes/repos/dracula.zsh-theme"]
 	path = .config/zsh/themes/repos/dracula.zsh-theme
 	url = https://github.com/dracula/zsh.git
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = git@github.com:ohmyzsh/ohmyzsh.git
-[submodule ".config/zsh/zsh-vi-mode"]
+[submodule ".config/zsh/plugins/zsh-vi-mode"]
 	path = .config/zsh/plugins/zsh-vi-mode
 	url = git@github.com:jeffreytse/zsh-vi-mode
 [submodule ".config/zsh/plugins/zsh-syntax-highlighting"]
