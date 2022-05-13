@@ -33,3 +33,6 @@ if filereadable(expand("~/.vimrc_background"))
 	source ~/.vimrc_background
 endif
 
+" Enable status line
+set laststatus=2
+set noshowmode
