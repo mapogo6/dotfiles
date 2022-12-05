@@ -40,3 +40,6 @@
 [submodule ".vim/pack/plugins/start/lightline.vim"]
 	path = .vim/pack/plugins/start/lightline.vim
 	url = git@github.com:itchyny/lightline.vim
+[submodule ".vim/pack/plugins/start/rust.vim"]
+	path = .vim/pack/plugins/start/rust.vim
+	url = git@github.com:/rust-lang/rust.vim
