@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="dracula"
+ZSH_THEME="essembeh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,12 +73,27 @@ ZSH_CUSTOM=$HOME/.config/zsh
 plugins=(
 	# built-in:
 	git
+	gpg-agent
 	web-search
 	# custom:
 	base16-shell
 	zsh-syntax-highlighting
 	zsh-vi-mode
 )
+
+# What OS are we running?
+if [[ $(uname) == "Darwin" ]] && ; then
+	source "$ZSH_CUSTOM"/os/mac.zsh
+elif [[ $(uname) == "Linux" ]]; then
+	source "$ZSH_CUSTOM"/os/linux.zsh
+else
+	echo 'Unknown OS!'
+fi
+
+# Do we have systemd on board?
+if command -v systemctl > /dev/null; then
+	source "$ZSH_CUSTOM"/os/systemd.zsh
+fi
 
 source $ZSH/oh-my-zsh.sh
 
