@@ -65,22 +65,6 @@ COMPLETION_WAITING_DOTS="true"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/.config/zsh
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	# built-in:
-	git
-	gpg-agent
-	web-search
-	# custom:
-	base16-shell
-	zsh-syntax-highlighting
-	zsh-vi-mode
-)
-
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]] && ; then
 	source "$ZSH_CUSTOM"/os/mac.zsh
@@ -94,6 +78,23 @@ fi
 if command -v systemctl > /dev/null; then
 	source "$ZSH_CUSTOM"/os/systemd.zsh
 fi
+
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins+=(
+	# built-in:
+	git
+	gpg-agent
+	web-search
+	# custom:
+	base16-shell
+	zsh-syntax-highlighting
+	zsh-vi-mode
+)
 
 source $ZSH/oh-my-zsh.sh
 
