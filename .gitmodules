@@ -46,3 +46,6 @@
 [submodule ".vim/pack/plugins/start/vim-unimpaired"]
 	path = .vim/pack/plugins/start/vim-unimpaired
 	url = git@github.com:/tpope/vim-unimpaired
+[submodule ".vim/pack/plugins/start/vim-surround"]
+	path = .vim/pack/plugins/start/vim-surround
+	url = git@github.com:/tpope/vim-surround
