@@ -14,6 +14,7 @@ let g:ctrlp_custom_ignore = {
 	\ 'dir': '\v[\/].(git|hg|svn)$',
 	\ 'file': '\v\.(exe|so|dll)$'
 \ }
+let g:ctrlp_open_new_file = 'r'
 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -32,6 +33,8 @@ if filereadable(expand("~/.vimrc_background"))
 	let base16colorspace=256
 	source ~/.vimrc_background
 endif
+
+set tags+=~/.ctags/systemtags,~/.ctags/homebrewtags
 
 " Enable status line
 set laststatus=2
