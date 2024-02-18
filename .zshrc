@@ -98,6 +98,8 @@ plugins+=(
 
 source $ZSH/oh-my-zsh.sh
 
+base16_ocean
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
