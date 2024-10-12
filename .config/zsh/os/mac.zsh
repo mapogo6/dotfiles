@@ -1,5 +1,6 @@
 plugins+=(
 	brew
 	macos
+	direnv
 )
 
