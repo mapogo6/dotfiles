@@ -49,3 +49,6 @@
 [submodule ".vim/pack/plugins/start/vim-surround"]
 	path = .vim/pack/plugins/start/vim-surround
 	url = git@github.com:/tpope/vim-surround
+[submodule ".vim/pack/plugins/start/vim-cpp-modern"]
+	path = .vim/pack/plugins/start/vim-cpp-modern
+	url = git@github.com:bfrg/vim-cpp-modern
