@@ -1,6 +1,6 @@
 plugins+=(
 	brew
-	macos
 	direnv
+	macos
+	iterm2
 )
-

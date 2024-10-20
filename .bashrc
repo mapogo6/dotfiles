@@ -122,3 +122,5 @@ export CXX=clang++
 export CC=clang
 
 alias open='xdg-open'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

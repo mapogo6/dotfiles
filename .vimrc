@@ -3,20 +3,24 @@ set relativenumber
 set nowrap
 syntax enable
 
+set rtp+=/opt/homebrew/opt/fzf
+
+let g:fzf_layout = { 'down': '~40%' }
+let g:fzf_vim = {}
+let g:fzf_vim.preview_window = []
+
+nnoremap <silent> <C-p> :GFiles<CR>
+
 let g:netrw_dirhistmax=0
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --no-heading
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
 
 set wildignore+=*\\tmp\\*,*.swp,*.exe
 
-let g:ctrlp_custom_ignore = {
-	\ 'dir': '\v[\/].(git|hg|svn)$',
-	\ 'file': '\v\.(exe|so|dll)$'
-\ }
-let g:ctrlp_open_new_file = 'r'
-
-" asynccompmlete tab completion
+" asyncomplete tab completion
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
@@ -26,7 +30,7 @@ function! s:on_lsp_buffer_enabled() abort
 	setlocal omnifunc=lsp#complete
 	setlocal signcolumn=yes
 	if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
-	nmap <buffer> gD <plug>(lsp-definition)
+	nmap <buffer> gd <plug>(lsp-declaration)
 	nmap <buffer> gs <plug>(lsp-document-symbol-search)
 	nmap <buffer> gS <plug>(lsp-workspace-symbol-search)
 	nmap <buffer> gr <plug>(lsp-references)
@@ -67,8 +71,6 @@ if exists('$BASE16_THEME')
 else
 	colorscheme base16-ocean
 endif
-
-set tags+=~/.ctags/systemtags,~/.ctags/homebrewtags
 
 " Enable status line
 set laststatus=2

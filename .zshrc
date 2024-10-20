@@ -79,26 +79,25 @@ if command -v systemctl > /dev/null; then
 	source "$ZSH_CUSTOM"/os/systemd.zsh
 fi
 
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins+=(
-	# built-in:
-	git
+	# omz:
+	branch
+	fzf
+	gitfast
 	gpg-agent
-	web-search
+	zoxide
 	# custom:
 	base16-shell
+	zsh-autocomplete
 	zsh-syntax-highlighting
-	zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
-
-base16_ocean
 
 # User configuration
 
@@ -126,6 +125,5 @@ base16_ocean
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if command -v zoxide &> /dev/null; then
-  eval "$(zoxide init zsh)"
-fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
