@@ -94,10 +94,12 @@ plugins+=(
 	# custom:
 	base16-shell
 	zsh-autocomplete
+	zsh-completions
 	zsh-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
+fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
+source "$ZSH/oh-my-zsh.sh"
 
 # User configuration
 
