@@ -93,6 +93,7 @@ plugins+=(
 	zoxide
 	# custom:
 	base16-shell
+	fzf-tab
 	zsh-autocomplete
 	zsh-completions
 	zsh-syntax-highlighting
